@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriela Garcia">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+        <title>Rigbus | O ônibus certo para você</title>
+    </head>
+    <body>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="user-data">
+                <h5>Mary Gomes</h5>
+                <p>@marygomes</p>
+            </div>
+            <a href="#"> 
+                <i class="fa fa-fw fa-clock-o"></i>
+                Horários
+            </a>
+            <a href="#">
+                <i class="fa fa-fw fa-bus"></i>
+                Linhas de ônibus
+            </a>
+            <a href="#">
+                <i class="fa fa-fw fa-stop"></i>
+                Paradas de ônibus
+            </a>
+            <a href="#">
+                <i class="fa fa-fw fa-heart"></i>
+                Meus favoritos
+            </a>
+            <a href="#">
+                <i class="fa fa-fw fa-user-circle"></i>
+                Perfil
+            </a>
+            <a href="#">
+                <i class="fa fa-fw fa-gear"></i>
+                Configurações
+            </a>
+
+            <hr>
+            <a href="#">
+                <i class="fa fa-fw fa-life-buoy"></i>
+                Ajuda
+            </a>
+            <a href="#">
+                <i class="fa fa-fw fa-star"></i>
+                Avalie-nos
+            </a>
+            <a href="#">
+                <i class="fa fa-fw fa-sign-out"></i>
+                Sair
+            </a>
+        </div>
+    
+        <button class="openbtn" onclick="openNav()">&#9776; Rigbus</button>
+    </body>
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidepanel").style.width = "70vw";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</html>
