@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriela Garcia">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+        <title>Rigbus | O ônibus certo para você</title>
+    </head>
+    <body>
+        <header>
+            <img src="../static/img/logotipo.png" alt="Rigbus" width="75%">
+        </header>
+        
+        <div class="container">
+            <div class="btn-group">
+                <a href="{{url_for('login')}}">
+                    <button class="btn-primary">
+                        ENTRAR
+                    </button>
+                </a>
+                <a href="{{url_for('register')}}">
+                    <button class="btn-primary">
+                        CRIAR CONTA
+                    </button>
+                </a>
+                <h6>OU</h6>
+                <a href="https://accounts.google.com/signin/v2/identifier?hl=pt-BR&continue=https%3A%2F%2Fwww.google.com.br%2F&ec=GAlAmgQ&flowName=GlifWebSignIn&flowEntry=AddSession">
+                    <button class="btn-secondary">
+                        <i class="fa fa-fw fa-google"></i>
+                        FAZER LOGIN COM GOOGLE
+                    </button>
+                </a>
+                <a href="https://www.facebook.com/">
+                    <button class="btn-secondary">
+                        <i class="fa fa-fw fa-facebook"></i>
+                        ENTRE COM FACEBOOK
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </body>
+</html>
