@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-         <!-- Required meta tags -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <meta name="author" content="Gabriela Garcia">
 
-        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
-        <title>Rigbus | O ônibus certo para você</title>
-    </head>
-    <body class="home">
-        {% include "partials/appbar.html" %}
-    
-        
-        <div class="container">
-           
+<head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriela Garcia">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <title>Rigbus | O ônibus certo para você</title>
+</head>
+
+<body class="home">
+    {% include "partials/appbar.html" %}
+
+
+    <div class="container">
+        <form action="" id="search">
+            <div class="form-input">
+                <i class="fa fa-fw fa-search"></i>
+                <input type="text" id="destiny" placeholder="Para onde deseja ir?">
+                <i class="fa fa-fw fa-microphone"></i>
+            </div>
+        </form>
+
+        <div class="maps">
+            <img src="../static/img/mapa.png" alt="">
         </div>
+    </div>
 
-        {% include "partials/navbar.html" %}
+    {% include "partials/navbar.html" %}
 
-    </body>
+</body>
+
 </html>

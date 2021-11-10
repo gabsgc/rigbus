@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 body {
-    background-color:#09479E;
+    background-color: #09479E;
     padding: 0;
     margin: 0;
-
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,7 +11,6 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-
     padding: 5vh;
 }
 
@@ -23,18 +20,18 @@ header {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-
     justify-content: center;
     align-items: center;
 }
 
+
 /* botões */
+
 .btn-primary {
     color: #ffffff;
     background-color: #FF9803;
     border: 2px solid #FF9803;
     border-radius: 7.5pt;
-
     height: 6vh;
     width: 80vw;
     margin-bottom: 1.5vh;
@@ -45,7 +42,6 @@ header {
     background-color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 7.5pt;
-
     height: 6vh;
     width: 80vw;
     margin-bottom: 1.5vh;
@@ -57,24 +53,27 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
     padding: 3vh;
-    
     color: #ffffff;
 }
 
+
 /*textos */
+
 h5 {
-    color: #FF9803; 
+    color: #FF9803;
 }
 
+
 /* forms */
+
 .text-login {
     color: #ffffff;
     padding: 7vh 0vh 0vh 5vh;
 }
 
-form {
+form .login,
+.register {
     padding-top: 15vh;
 }
 
@@ -82,7 +81,6 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     margin-bottom: 3vh;
 }
 
@@ -95,19 +93,36 @@ form {
     background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 3px;
-
     padding: 2vh;
 }
 
+
+/* form search */
+
+div .form-input {
+    z-index: 1;
+    padding-top: 3vh;
+    width: max-content;
+}
+
+.form-input input {
+    border: none;
+}
+
 .home {
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding: 0;
     margin: 0;
-
     font-family: 'Roboto', sans-serif;
 }
 
+div .maps {
+    width: 100vw;
+}
+
+
 /* navbar bottom */
+
 .navbar {
     overflow: hidden;
     position: fixed;
@@ -117,28 +132,28 @@ form {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
-
     background-color: #ffffff;
 }
-  .navbar a {
+
+.navbar a {
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
     text-align: center;
     text-decoration: none;
-    
     padding: 5vw 5vh;
-  }
-  
-  .navbar a.active {
+}
+
+.navbar a.active {
     background-color: #0365F0;
     color: #ffffff;
-  }
+}
 
-  /* menu lateral */
-  .sidepanel {
+
+/* menu lateral */
+
+.sidepanel {
     height: 100vh;
     width: 0;
     position: fixed;
@@ -146,42 +161,43 @@ form {
     overflow-x: hidden;
     top: 0;
     left: 0;
-    padding-top: 10vh;
-    
+    padding-top: 1.5vh;
     background-color: #ffffff;
     transition: 0.5s;
-  }
-  
-  /* links do menu lateral */
-  .sidepanel a {
+}
+
+
+/* links do menu lateral */
+
+.sidepanel a {
     display: block;
     padding: 2vh 3vw 2vh 5vw;
     text-decoration: none;
     font-size: 3vh;
     color: #151b22;
     transition: 0.3s;
-  }
- 
-  .sidepanel .closebtn {
+}
+
+.sidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
 
-  .openbtn {
-    font-size: 20px;
+.openbtn {
     background-color: #09479E;
     color: white;
-    padding: 5vw 2vh;
+    font-size: 20px;
+    text-align: start;
+    padding: 3vh 6vw;
     border: none;
     width: 100vw;
-  }
+}
 
-  .user-data {
+.user-data {
     display: block;
-    padding: 2vh 3vw 1.2vh 5vw;
-  }
-
-  
+    height: 28vh;
+    padding: 1vh 2vw 1vh 4.5vw;
+}
